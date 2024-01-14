@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>part1_02</title>
+    <style>
+        /* page 10 */
+       div {
+        color: gray;
+        font-size: 16px;
+       }
+       a { color: inherit } /* inherited from div */
+       .callout {
+        width: 100px;
+        height: 20px;
+         position: relative;
+         background: pink;
+         border: 1px solid #000;
+       }
+       .callout::before {
+        content: "test";
+        position: absolute;
+        top: -.4em; left: 1em;
+        padding: .35em;
+        background: inherit; /* inherited from .callout */
+        border: inherit;     /* inherited from .callout */
+        border-right: 0;
+        border-bottom: 0;
+        transform: rotate(45deg);
+       }
+    </style>
+  </head>
+  <body>
+    <div>
+        <a href="#">super link</a><br>
+        <label>Your username:</label>
+        <div class="callout"></div>
+    </div>
+  </body>
+</html>
