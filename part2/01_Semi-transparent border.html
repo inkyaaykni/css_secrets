@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semi-transparent border</title>
+    <style>
+        /* page 18-19 (Chinese version) */
+        div {
+            width: 100px;
+            height: 100px;
+            border: 10px solid hsla(0,0%,100%,.5);
+            background: pink; /* pink is used instead of the white color used in the original book */
+            background-clip: padding-box;
+        }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
