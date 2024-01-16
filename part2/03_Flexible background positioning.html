@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03_Flexible background positioning</title>
+    <style>
+        /* page 23-24  Chinese version) */
+        body {
+            padding: 50px;
+        }
+        div {
+            width: 700px;
+            height: 700px;
+            padding: 10px;
+            background: url(image/img1.jpg) no-repeat bottom right #58a;
+            /* background-position: right 20px bottom 10px; */
+            /* background-origin: content-box; */
+            background-position: calc(100% - 20px) calc(100% - 10px)
+        }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
