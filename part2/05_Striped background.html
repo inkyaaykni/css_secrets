@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05_Striped background</title>
+    <style>
+        /* page 27-33  Chinese version) */
+        body {
+            padding: 50px;
+        }
+        div {
+            width: 300px;
+            height: 300px;
+        }
+        .test1 {
+            /* background: linear-gradient(#fb3, #58a); */
+            /* background: linear-gradient(#fb3 20%, #58a 80%); */
+            /* background: linear-gradient(#fb3 50%, #58a 50%); */
+
+            /* background: linear-gradient(#fb3 50%, #58a 50%); */
+            /* background-size: 100% 30px; */
+            /* background: linear-gradient(#fb3 30%, #58a 30%); */
+            /* background-size: 100% 30px; */
+            /* background: linear-gradient(#fb3 30%, #58a 0); */
+            /* background-size: 100% 30px; */
+            background: linear-gradient(#fb3 33.3%,
+            #58a 0, #58a 66.6%, yellowgreen 0);
+            background-size: 100% 45px;
+        }
+        .test2 {
+            /* vertical stripe */
+            background: linear-gradient(to right, /* 或 90deg */
+            #fb3 50%, #58a 0);
+            background-size: 30px 100%;
+
+            background: linear-gradient(45deg,
+            #fb3 25%, #58a 0, #58a 50%,
+            #fb3 0, #fb3 75%, #58a 0);
+            /* background-size: 30px 30px; */
+            background-size: 42.426406871px 42.426406871px;
+
+        }
+        .test3 {
+            /* background: repeating-linear-gradient(45deg,
+            #fb3, #58a 30px); */
+            /* background: repeating-linear-gradient(45deg,
+            #fb3, #fb3 15px, #58a 0, #58a 30px); */
+
+            /* background: repeating-linear-gradient(60deg,
+            #fb3, #fb3 15px, #58a 0, #58a 30px); */
+
+            background: repeating-linear-gradient(45deg,
+            #fb3 0, #fb3 25%, #58a 0, #58a 50%);
+            background-size: 42.426406871px 42.426406871px;
+        }
+        .test4 {
+            /* new style */
+            background: repeating-linear-gradient(60deg, #fb3 0 15px, #58a 0 30px); 
+        }
+        .test5 {
+            /* background: repeating-linear-gradient(30deg,
+            #79b, #79b 15px, #58a 0, #58a 30px); */
+
+            background: #58a;
+            background-image: repeating-linear-gradient(30deg,
+            hsla(0,0%,100%,.1),
+            hsla(0,0%,100%,.1) 15px,
+            transparent 0, transparent 30px);
+        }
+    </style>
+  </head>
+  <body>
+    <div class="test5"></div>
+  </body>
+</html>
